@@ -9,7 +9,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import RetrievalQA
 
 def embed_and_save_documents():
-    with open("your/actual/path/to/constitution_articles.json", "r", encoding="utf-8") as f:
+    open("constitution_articles.json", "r", encoding="utf-8"):
 
         articles = json.load(f)
 
