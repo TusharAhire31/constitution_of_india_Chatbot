@@ -1,7 +1,3 @@
 venv/
 /venv
 venv
-
-
-
-git rm -r --cached venv
