@@ -31,7 +31,10 @@ def embed_and_save_documents():
     )
     split_docs = text_splitter.split_documents(documents)
 
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={"device": "cpu"}
+)
     vectorstore = FAISS.from_documents(split_docs, embeddings)
 
     vectorstore.save_local("my_vector_store")
