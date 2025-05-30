@@ -37,5 +37,8 @@ langchain-community
 faiss-cpu
 sentence-transformers
 huggingface-hub
-
+streamlit
+langchain-core
+langchain-huggingface
+python-dotenv
 
