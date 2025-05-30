@@ -1,6 +1,5 @@
 import os
-os.environ["HOME"] = os.getcwd()  
-
+os.environ["HOME"] = "/tmp"
 import streamlit as st
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint
