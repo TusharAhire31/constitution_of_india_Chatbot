@@ -1,5 +1,7 @@
-import streamlit as st
 import os
+os.environ["HOME"] = os.getcwd()  
+
+import streamlit as st
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
