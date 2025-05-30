@@ -8,6 +8,9 @@ from dotenv import load_dotenv
 import warnings
 warnings.filterwarnings("ignore")
 
+os.environ["STREAMLIT_HOME"] = os.getcwd()
+
+
 # Load .env file and Hugging Face API token
 load_dotenv()
 hf_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
