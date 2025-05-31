@@ -33,4 +33,11 @@ constitution-chatbot/
 ├── requirements.txt
 ├── .env # API keys
 └── README.md
+# Constitution of India Chatbot 🇮🇳
+
+A Streamlit chatbot that answers questions about the Indian Constitution using context-aware responses powered by HuggingFace LLMs and FAISS.
+
+## Deployment Notes
+
+Make sure `.streamlit/config.toml` exists to avoid permission errors in Hugging Face Spaces.
 

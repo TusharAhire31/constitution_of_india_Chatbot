@@ -1,5 +1,5 @@
 import os
-os.environ["HOME"] = "/tmp"
+os.environ["HOME"] = "/home/user"
 import streamlit as st
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint
